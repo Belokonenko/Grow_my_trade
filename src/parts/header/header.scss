@@ -1,1 +1,26 @@
+.header {
+    background: #232c7b;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+}
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    align-items: stretch;
+}
+.header__nav-list {
+    display: flex;
+}
+.header__nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    &::after {
+        content: '';
+        position: absolute;
 
+    }
+    
+}
