@@ -1,35 +1,19 @@
 <header class="header">
     <div class="header__container container">
-        <div class="header__logo">
-            <img class="header__logo-img" src="" alt="" />
-            <div class="header__logo-wrap-text">
-                <div>GROW</div>
-                <div>MY TRADE</div>
-            </div>
-        </div>
+        @@include('../logo/logo.html')
+        <nav class="header__nav-list">
+            <a href="#" class="header__nav-link">About</a>
+            <a href="#" class="header__nav-link">Results</a>
+            <a href="#" class="header__nav-link">Process</a>
+            <a href="#" class="header__nav-link">Contact</a>
+        </nav>
 
-        <ul class="header__nav-list">
-            <li class="header__nav-item">
-                <a href="#" class="header__nav-link">About</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Results</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Process</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Contact</a>
-            </li>
-        </ul>
-
-        <div>
+        <div class="header__contact">
             <a class="header__tel" href="tel:1300046273 ">
-                <p>CALL NOW</p>
-                <p>1300 046 273</p>
+                <p class="header__tel-title">CALL NOW</p>
+                <p class="header__tel-num">1300 046 273</p>
             </a>
-
-            <a href="#">GET INSTANT QUOTE</a>
+            @@include('../get/get-small.html')
         </div>
     </div>
 </header>

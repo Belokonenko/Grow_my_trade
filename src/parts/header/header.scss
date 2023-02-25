@@ -7,18 +7,29 @@
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
     align-items: stretch;
+    min-height: 100px;
+    & > * {
+        align-self: center;
+    }
 }
+
 .header__nav-list {
     display: flex;
-    flex-wrap: wrap;
-}
-.header__nav-item:not(:last-child) {
-    margin-right: 44px;
+    align-self: stretch;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
 }
 .header__nav-link {
     color: $color-light;
     @include linkMax();
-    transition: all 0.3s; 
+    transition: all 0.3s;
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
     &:hover {
         color: $color-beta;
     }
@@ -38,3 +49,63 @@
         transform: scale(1);
     }
 }
+.header__contact {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    height: 53px;
+}
+.header__tel {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 195px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.header__tel-title {
+    align-self: center;
+    justify-self: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: $color-light;
+    &::before {
+        content: url(../../img/phone.svg);
+        margin-right: 7px;
+    }
+}
+.header__tel-num {
+    align-self: center;
+    justify-self: center;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color-beta;
+}
+
+// @media (max-width: 1400px) {
+// }
+@media (max-width: 1200px) {
+    .header__nav-link {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+@media (max-width: 1060px) {
+    .header__nav-list {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width: 992px) {
+    .header__nav-list {
+        display: none;
+    }
+}
+// @media (max-width: 768px) {
+// }
+// @media (max-width: 576px) {
+// }
+// @media (max-width: 320px) {
+// }
