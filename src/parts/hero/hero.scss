@@ -1,0 +1,171 @@
+.hero {
+    background-color: $color-alpha;
+    min-height: 690px;
+}
+.hero__container {
+    padding-top: 90px;
+}
+.hero__title {
+    display: block;
+    max-width: 824px;
+    position: relative;
+    font-weight: 400;
+    font-size: 32.5px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    &::before {
+        position: absolute;
+        content: url("../../img/apps.svg");
+    }
+}
+.hero__subtitle {
+    margin: 0;
+    font-family: "Passion One";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hero__text {
+    font-family: "Passion One";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 83px;
+    line-height: 1;
+    text-align: center;
+    color: $color-beta;
+    margin-bottom: 50px;
+}
+// advantages-list
+.hero__advantages-list {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    max-width: 824px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.hero__advantages-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 15px;
+}
+
+.hero__item-img {
+}
+.hero__item-wrap-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.hero__item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    align-self: flex-end;
+}
+.hero__item-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+
+// /advantages-list
+//  get
+.hero__get {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    max-width: 824px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+.hero__get-input {
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+}
+
+// /get
+
+// @media (max-width: 1400px) {
+// }
+// @media (max-width: 1200px) {
+// }
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+    .hero__title {
+        max-width: 624px;
+    }
+}
+@media (max-width: 768px) {
+    .hero__advantages-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        row-gap: 10px;
+        grid-column: 0;
+    }
+    .hero__item-img {
+        margin: 0 auto;
+    }
+
+    .hero__item-title {
+        text-align: center;
+        align-self: flex-start;
+    }
+    .hero__item-subtitle {
+        text-align: center;
+    }
+    .hero__get {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+        width: 100%;
+        padding-bottom: 140px;
+    }
+    .hero__get-input {
+        padding-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    .hero__subtitle {
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .hero__subtitle-hidden {
+        display: none;
+    }
+    .hero__hidden {
+
+
+
+        display: block;
+        font-family: "Passion One";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+        & span {
+            color: $color-beta;
+        }
+    }
+    .hero__text-hidden {
+        display: none;
+    }
+    .hero__text {
+        font-weight: 700;
+        font-size: 41px;
+    }
+}
+// @media (max-width: 320px) {
+// }

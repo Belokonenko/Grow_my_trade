@@ -1,0 +1,17 @@
+.menu {
+    position: absolute;
+    right: 0;
+
+    background-color: $color-alpha;
+    padding: 20px;
+}
+.menu-link {
+padding: 10px 30px;
+}
+.drop-menu {
+    display: none;
+}
+
+.drop-menu.open {
+    display: block;
+}

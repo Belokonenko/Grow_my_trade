@@ -1,27 +1,49 @@
 .get-guote__btn {
-width: 212px;
-height: 53px;
-font-family: 'Passion One';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 100%;
-background-color: $color-gamma;
-border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 307px;
+    height: 73px;
+    font-family: "Passion One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    background-color: $color-gamma;
+    border-radius: 3px;
 }
-
-
+.get-guote__btn-title {
+    font-family: "Passion One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+}
+.get-guote__btn-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+}
 // @media (max-width: 1400px) {
 // }
 // @media (max-width: 1200px) {
 // }
-// @media (max-width: 992px) {
-// }
-// @media (max-width: 768px) {
-// }
+@media (max-width: 992px) {
+    .btn-small {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .get-guote__btn   {
+        width: 100%;
+    }
+}
 // @media (max-width: 576px) {
 // }
 // @media (max-width: 320px) {
 // }
-
-
